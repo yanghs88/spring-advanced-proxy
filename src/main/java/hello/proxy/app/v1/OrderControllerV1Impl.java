@@ -1,10 +1,10 @@
 package hello.proxy.app.v1;
 
-public class OrderControllerV1Impl implements OrderControllerV1 {
+public class OrderControllerV1Impl implements OrderControllerV2 {
 
-    private final OrderServiceV1 orderService;
+    private final OrderServiceV2 orderService;
 
-    public OrderControllerV1Impl(OrderServiceV1 orderService) {
+    public OrderControllerV1Impl(OrderServiceV2 orderService) {
         this.orderService = orderService;
     }
 
